@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Portfolio</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style></style>
-<script src=""></script>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<title>Portfolio</title>
+</head>
 <body>
-  <img alt="LA" style="width: 100%">
-  <div class="">
-    <h1>This is a Heading.</h1>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-  </div>
+	<header>
+		<div class="container">
+			<nav class="flex items-centre justify-between">
+				<div class="left flex justify-right">
+					<div class="logo">
+						<img src="./images/Profile.jpeg" width="50px" alt="logo">
+					</div>
+					<div>
+						<a href="#">Home</a>
+						<a href="#">About</a>
+						<a href="#">Services</a>
+						<a href="#">Blog</a>
+						<a href="#">More</a>
+					</div>
+				</div>
+				<div class="right">
+					<button class="btn btn-primary">Contact</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="hero flex items-centre justify-between">
+		<div class="left flex-1 justify-center">
+			<img src="./images/Profile.jpeg" alt="Profile">
+		</div>
+		<div class="right flex-1">
+			<h6>Vincent Kigen</h6>
+			<h1>I'm a Backend<br> <span>Developer</span></h1>
+			<p>A Backend Engineer with more than 5 years experience designing, building and developing backend web applications using Java and Spring Boot</p>
+			<div class="btn btn-secondary">DOWNLOAD RESUME</div>
+		</div>
+	</div>
 </body>
 </html>
