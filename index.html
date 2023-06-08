@@ -1,85 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-	<title>Portfolio</title>
+	<title>Portfolio Vincent Kigen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- linking css file -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+	<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+		<div class="container">
+			<a class="navbar-brand" href="#">Kigen</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- main banner -->
+	<section class="bgimage" id="home">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+					<h2 class="hero_title">Hi, it's me Vincent</h2>
+					<p class="hero_desc">I am a software engineer in Nairobi</p>
+				</div>
+			</div>
+		</div>
+	</section>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<nav class="flex items-centre justify-between">
-				<div class="left flex justify-right">
-					<div class="logo">
-						<img src="./images/logo.png" width="50px" alt="logo">
+	<!-- load javascript after loading all html content -->
+	<script src="script/script.js"></script>
+	<!-- about section -->
+	<section id="about">
+		<div class="container mt-4 pt-4">
+			<h1 class="text-center">About Me</h1>
+			<div class="row mt-4">
+				<div class="col-lg-4">
+					<img src="images/Profile.jpeg" class="imageAboutPage" alt="">
+				</div>
+				<div class="col-lg-8">
+					<p>A software engineer with a passion of solving problems using technology.</p>
+					<div class="row mt-3">
+						<div class="col-md-6">
+							<ul>
+								<li>Name: Vincent Kigen</li>
+								<li>Occupation: Software Engineer</li>
+							</ul>
+						</div>
 					</div>
-					<div>
-						<a href="#">Home</a>
-						<a href="#">About</a>
-						<a href="#">Services</a>
-						<a href="#">Blog</a>
-						<a href="#">More</a>
+					<div class="row mt-3">
+						<p>Skilled in various languages such as Java, JavaScript, HTML & CSS, Android and various frameworks such as Spring Boot, React.js, AngularJS and React Native.
+							Also proficient in various SQL databases(PostgreSQL & MySQL) and NoSQL databases(MongoDB)
+						</p>
 					</div>
-				</div>
-				<div class="right">
-					<button class="btn btn-primary">Contact</button>
-				</div>
-			</nav>
-		</div>
-		<div class="hero flex items-centre justify-between">
-			<div class="left flex-1 justify-center">
-				<img src="./images/Profile.jpeg" alt="Profile">
-			</div>
-			<div class="right flex-1">
-				<h6>Vincent Kigen</h6>
-				<h1>I'm a Backend<br> <span>Developer</span></h1>
-				<p>A Backend Engineer with more than 5 years experience designing, building and developing backend web applications using Java and Spring Boot</p>
-				<div>
-					<button class="btn btn-secondary">DOWNLOAD RESUME</button>
-				</div>
-			</div>
-		</div>
-	</header>
-	<section class="about">
-		<div class="container flex items-centre">
-			<div class="left flex-1 justify-right">
-				<img src="./images/Profile.jpeg" height="400px" alt="profile pic">
-			</div>
-			<div class="right flex-1">
-				<h1>Abount <span>Me</span></h1>
-				<h3>Hello! I'm Vincent Kigen</h3>
-				<p>A backend engineer with more than 5 years experience building web and mobile applications</p>
-				<div class="socials">
-					<a href="#"><img src="./images/linkedin.png" width="40px"></a>
-					<a href="#"><img src="./images/github.png" width="40px"></a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="services">
+
+	<!-- services section -->
+	<section id="services">
 		<div class="container">
-			<h1 class="services-head">Services</h1>
-			<p>All your digital needs covered.</p>
-			<div class="card-grid">
-				<div class="card">
-					<img src="./images/phone.png">
-					<h2>Mobile Application Development</h2>
-					<p>Mobile application development with React Native</p>
+			<h1 class="text-center">Services</h1>
+			<div class="row">
+				<div class="col-lg-4 mt-4">
+					<div class="card servicesText">
+						<div class="card-body">
+							<i class="fas servicesIcon fa-clock"></i>
+							<h4 class="card-title mt-3">Website Development</h4>
+							<p class="card-text mt-3">Add some description abput website development. I don't know what you'll write. Just write something.</p>
+						</div>
+					</div>
 				</div>
-				<div class="card">
-					<img src="./images/web.png">
-					<h2>Web Application Development</h2>
-					<p>Web application development with Java</p>
+				<div class="col-lg-4 mt-4">
+					<div class="card servicesText">
+						<div class="card-body">
+							<i class="fas servicesIcon fa-layer-group"></i>
+							<h4 class="card-title mt-3">Mobile Application Development</h4>
+							<p class="card-text mt-3">A description about mobile application development.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mt-4">
+					<div class="card servicesText">
+						<div class="card-body">
+							<i class="fas servicesIcon fa-wrench"></i>
+							<h4 class="card-title mt-3">QA</h4>
+							<p class="card-text mt-3">A description on QA.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 mt-4">
+					<div class="card servicesText">
+						<div class="card-body">
+							<i class="fas servicesIcon fa-check-circle"></i>
+							<h4 class="card-title mt-3">Web Application Development</h4>
+							<p class="card-text mt-3">A description on web application development.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mt-4">
+					<div class="card servicesText">
+						<div class="card-body">
+							<i class="fas servicesIcon fa-shield-alt"></i>
+							<h4 class="card-title mt-3">DevOps</h4>
+							<p class="card-text mt-3">A description on DevOps.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- portfolio section -->
+	<section id="portfolio">
+		<div class="container mt-3">
+			<h1 class="text-center">Portfolio</h1>
+			<div class="row">
+				<div class="col-lg-4 mt-4">
+					<div class="card">
+						<img class="card-img-top" src="images/portfolio1.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Tap2Eat</h4>
+							<p class="card-text">A school meal-serving system that allows parents to pay for and manage their children's meals</p>
+							<div class="text-center">
+								<a href="#" class="btn btn-success">Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4">
+					<div class="card portfolioContent">
+						<img class="card-img-top" src="images/portfolio2.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Airtime4Ins</h4>
+							<p class="card-text">A platform where customers buy airtime and get a free last expense insurance cover.</p>
+							<div class="text-center">
+								<a href="#" class="btn btn-success">Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4">
+					<div class="card portfolioContent">
+						<img class="card-img-top" src="images/portfolio3.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Cashcow</h4>
+							<p class="card-text">A system to manage herds, feeding and milk production & sale by farmers.</p>
+							<div class="text-center">
+								<a href="#" class="btn btn-success">Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 mt-4">
+					<div class="card portfolioContent">
+						<img class="card-img-top" src="images/portfolio4.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Smartrose</h4>
+							<p class="card-text">A clothing store system used to manage stock, income and expenses.</p>
+							<div class="text-center">
+								<a href="#" class="btn btn-success">Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4">
+					<div class="card portfolioContent">
+						<img class="card-img-top" src="images/portfolio5.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Tramis</h4>
+							<p class="card-text">A system used to manage a tractor farm income and expenses.</p>
+							<div class="text-center">
+								<a href="#" class="btn btn-success">Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-4">
+					<div class="card portfolioContent">
+						<img class="card-img-top" src="images/portfolio6.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+							<h4 class="card-title">Car Reservation App</h4>
+							<p class="card-text">A system used to reserve cars. Add this to make the text longer</p>
+							<div class="text-center">
+								<a href="#" class="btn btn-success">Link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- contact section -->
+	<section id="contact">
+		<div class="container mt-3 contactContent">
+			<h1 class="text-center">Contact Me</h1>
+			<div class="row mt-4">
+				<div class="col-lg-6">
+					<div style="max-width:100%; overflow:hidden; color:red; width:500px; height:500px;">
+						<div id="embedmap-canvas" style="height:100%; width:100%; max-width:100%;">
+							<iframe style="height:100%; width:100%; border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Nairobi,+Kenya&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+						</div>
+						<a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+						<style>#embedmap-canvas img{max-width:none!important; background:none!important; font-size:inherit; font-weight:inherit;}</style>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<!-- form fields -->
+					<form>
+						<input type="text" class="form-control form-control-lg" placeholder="Name">
+						<input type="email" class="form-control mt-3" placeholder="Email">
+						<input type="text" class="form-control mt-3" placeholder="Subject">
+						<div class="mb-3 mt-3">
+							<textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+						</div>
+					</form>
+					<button type="button" class="btn btn-success mt-3">Contact Me</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer section -->
+	<footer id="footer">
+		<div class="container-fluid">
+			<!-- social media icons -->
+			<div class="social-icons mt-4">
+				<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
