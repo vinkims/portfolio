@@ -50,7 +50,6 @@
 /* Portfolio section */
 .project-card {
     height: 400px;
-    position: relative;
 }
 .project-img {
     width: 100%;
@@ -110,6 +109,12 @@
 
 .project-card:hover .project-content {
     opacity: 1;
+}
+
+.link-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 /* displays background color black on navbar scroll */
